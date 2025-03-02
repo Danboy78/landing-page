@@ -1,0 +1,64 @@
+.Wrapper{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+    height: 600px;
+    background-color: white;
+    position: relative;
+    top: 20px;
+    flex-direction: row;
+    gap: 5%;
+}
+.login_menu{
+    width: 50%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 15%;
+    flex-direction: column;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+}
+ input{
+    width: 400px;
+    height: 34px;
+    border: 3px solid green;
+    border-radius: 5px;
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.signup input{
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: green;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    width: 40%;
+    height: 580px;
+    border-radius: 10px;
+    background-color: blue;
+    background-image: url(pixel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-self: center;
+}
