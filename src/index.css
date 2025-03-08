@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Madurai:wght@300;400;500;600;700&family=Italianno&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+nav .links{
+    display: none;
+    
+    position: relative;
+    top: 94px;
+    left: 18%;
+    width: 41%;
+    margin: 0;
+    background-color: black;
+}
+nav .links ul,li{
+    display: flex;
+    flex-direction: column;
+    
+    list-style: none;
+    margin: 5px;
+}
+
+
+@media only screen and (min-width: 600px){
+    body{
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav .links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 40px;
+        
+        margin: 0;
+        top: 0;
+        background-color: black;
+    }
+
+    nav .links ul{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       list-style: none;
+       
+    }
+}
