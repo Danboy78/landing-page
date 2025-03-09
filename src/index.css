@@ -33,6 +33,7 @@ nav .links ul,li{
 }
 
 
+
 @media only screen and (min-width: 600px){
     body{
         margin: 0;
@@ -69,5 +70,8 @@ nav .links ul,li{
        align-items: center;
        list-style: none;
        
+    }
+    .material-symbols-outlined{
+        display: none;
     }
 }
