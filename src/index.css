@@ -1,77 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Madurai:wght@300;400;500;600;700&family=Italianno&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* Navbar.css */
 body{
-    font-family: "Be Vietnam Pro", sans-serif;
-    margin: 0;
+    margin: 0 ;
     padding: 0;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 40px;
+.navbar {
     background-color: black;
     color: white;
-}
-nav .links{
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #a0aec0;
+  }
+  
+  .menu-button {
     display: none;
-    
-    position: relative;
-    top: 94px;
-    left: 18%;
-    width: 41%;
-    margin: 0;
-    background-color: black;
-}
-nav .links ul,li{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
     display: flex;
     flex-direction: column;
-    
-    list-style: none;
-    margin: 5px;
-}
-
-
-
-@media only screen and (min-width: 600px){
-    body{
-        margin: 0;
-        padding: 0;
-        
-
+    gap: 1rem;
+    background: #2d3748;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+  }
+  
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .mobile-menu a:hover {
+    color: #a0aec0;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
     }
-
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+  
+    .menu-button {
+      display: block;
     }
-
-    nav .links{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        height: 40px;
-        
-        margin: 0;
-        top: 0;
-        left: 0;
-        background-color: black;
-    }
-
-    nav .links ul{
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       align-items: center;
-       list-style: none;
-       
-    }
-    .material-symbols-outlined{
-        display: none;
-    }
-}
+  }
+  
