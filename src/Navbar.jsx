@@ -1,27 +1,34 @@
-import "./index.css"
+import { useState } from "react";
+import "./index.css";
 
-export default function Navbar(){
-    return(
-        <nav>
-            <div className="logo">
-                <h1>Navaeo</h1>
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
 
-            </div>
+  return (
+    <nav className="navbar">
+      <div className="container">
+        <h1 className="logo">Brand</h1>
+        
+        <div className="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
 
-            <div className="links">
-                <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About</li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-
-            <div>
-              <span class="material-symbols-outlined">
-                <i class="material-icons">menu</i>
-              </span>
-            </div>
-        </nav>
-    )
+        <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? "✖" : "☰"}
+        </button>
+      </div>
+      
+      {isOpen && (
+        <div className="mobile-menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+      )}
+    </nav>
+  );
 }
